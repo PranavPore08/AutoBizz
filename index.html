@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Autorizz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheet -->
+    <link rel="icon" href="images/auto_favi.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/f7b393d83e.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <section id="navigation" class="bg-dark">
+
+        <div class="container-fluid text-center" id="nav-container">
+
+            <nav class="navbar navbar-dark navbar-expand-md">
+                <a class="navbar-brand text-center" href="/">
+                    <img src="images/t1.png" alt="">
+                </a>
+               
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="window.location.href='Contact/contact.html'">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- Filtering Options -->
+    <section id="filtering">
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-sm">
+                <div class="dropdown price">
+                    <button class="btn btn-outline-dark dropdown-toggle bord-wid" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" onclick="TeleCalling()">Tele-Calling Team </button>
+                </div>
+            </div>
+
+
+            <div class="col-sm">
+                <div class="dropdown yearby">
+                    <button class="btn btn-outline-dark dropdown-toggle bord-wid" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" onclick="Sales()">Sales Assistant</button>
+                </div>
+            </div>
+
+
+            <div class="col-sm">
+                <div class="dropdown Range">
+                    <button class="btn btn-outline-dark dropdown-toggle bord-wid" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" onclick="Business()">Business Manager </button>
+                    
+                </div>
+            </div>
+
+            <!-- Sorting -->
+            <div class="col-sm">
+                <div class="dropdown sortby">
+                    <button class="btn btn-outline-dark dropdown-toggle bord-wid" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" onclick="AfterSales()">After-Sales Specialist</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="filtering">
+        <div class="container-fluid" id="TeleCall">
+            <section class="pb-4">
+                <div class="bg-white border rounded-5">
+                  <section class="p-5 w-100 bg-dark " style="border-radius: .5rem .5rem 0 0;">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="card text-black" style="border-radius: 25px;">
+                          <div class="card-body p-md-5">
+                            <div class="row justify-content-center">
+                              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1 text-center">
+                                <p class="text-center h1 fw-bold mb-5 mt-4">Sign In Tele-Calling Team</p>
+                                <form>
+                                    <div class="form-group border border-dark rounded">
+                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username">
+                                      </div>
+                                      <div class="form-group border border-dark rounded">
+                                        <input type="password" class="form-control" id="formGroupExampleInput2"  placeholder="Password">
+                                      </div>
+                                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                                    <button type="button" class="btn btn-outline-dark btn-lg">Login</button>
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+                                <img src="login.png" class="img-fluid" alt="Sample image">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  
+                </div>
+              </section>
+        </div>
+        <div class="container-fluid" id="Sale">
+            <section class="pb-4">
+                <div class="bg-white border rounded-5">
+                  
+                  <section class="p-5 w-100 bg-dark " style="border-radius: .5rem .5rem 0 0;">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="card text-black" style="border-radius: 25px;">
+                          <div class="card-body p-md-5">
+                            <div class="row justify-content-center">
+                              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1 text-center">
+              
+                                <p class="text-center h1 fw-bold mb-5 mt-4">Sign In Sales Assistant</p>
+                                <form>
+                                  
+                                    <div class="form-group border border-dark rounded">
+                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username">
+                                      </div>
+                                      <div class="form-group border border-dark rounded">
+                                        <input type="password" class="form-control" id="formGroupExampleInput2"  placeholder="Password">
+                                      </div>
+                                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                                    <button type="button" class="btn btn-outline-dark btn-lg">Login</button>
+                                  </div>
+              
+                                </form>
+              
+                              </div>
+                              <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+        
+                                <img src="login.png" class="img-fluid" alt="Sample image">
+                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+        </div>
+        </section>
+        </div>
+        <div class="container-fluid" id="Business">
+            <section class="pb-4">
+                <div class="bg-white border rounded-5">
+                  <section class="p-5 w-100 bg-dark " style="border-radius: .5rem .5rem 0 0;">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="card text-black" style="border-radius: 25px;">
+                          <div class="card-body p-md-5">
+                            <div class="row justify-content-center">
+                              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1 text-center">
+              
+                                <p class="text-center h1 fw-bold mb-5 mt-4">Sign In Business</p>
+                                <form>
+                                  
+                                    <div class="form-group border border-dark rounded">
+                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username">
+                                      </div>
+                                      <div class="form-group border border-dark rounded">
+                                        <input type="password" class="form-control" id="formGroupExampleInput2"  placeholder="Password">
+                                      </div>
+                                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                                    <button type="button" class="btn btn-outline-dark btn-lg">Login</button>
+                                  </div>
+              
+                                </form>
+              
+                              </div>
+                              <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+        
+                                <img src="login.png" class="img-fluid" alt="Sample image">
+                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+            </section>
+        </div>
+        <div class="container-fluid" id="AfterSale">
+            <section class="pb-4">
+                <div class="bg-white border rounded-5">
+                  
+                  <section class="p-5 w-100 bg-dark " style="border-radius: .5rem .5rem 0 0;">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="card text-black" style="border-radius: 25px;">
+                          <div class="card-body p-md-5">
+                            <div class="row justify-content-center">
+                              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1 text-center">
+              
+                                <p class="text-center h1 fw-bold mb-5 mt-4">Sign In AfterSales Team</p>
+                                <form>
+                                  
+                                    <div class="form-group border border-dark rounded">
+                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username">
+                                      </div>
+                                      <div class="form-group border border-dark rounded">
+                                        <input type="password" class="form-control" id="formGroupExampleInput2"  placeholder="Password">
+                                      </div>
+                                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                                    <button type="button" class="btn btn-outline-dark btn-lg">Login</button>
+                                  </div>
+              
+                                </form>
+              
+                              </div>
+                              <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+        
+                                <img src="login.png" class="img-fluid" alt="Sample image">
+                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+            </section>
+        </div>
+</section>
+<section id="filtering">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Registartion-->
+            <div class="col-sm">
+                <div class="dropdown sortby">
+                    <button class="btn btn-outline-dark dropdown-toggle bord-wid" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" onclick="window.location.href='Register/register.html'">Click to Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+<script>
+        document.getElementById('TeleCall').style.display="initial";
+        document.getElementById('Sale').style.display="none";
+        document.getElementById('Business').style.display="none";
+        document.getElementById('AfterSale').style.display="none";
+    function TeleCalling(){
+        document.getElementById('TeleCall').style.display="initial";
+        document.getElementById('Sale').style.display="none";
+        document.getElementById('Business').style.display="none";
+        document.getElementById('AfterSale').style.display="none";
+    }
+    function Sales(){
+        document.getElementById('TeleCall').style.display="none";
+        document.getElementById('Sale').style.display="initial";
+        document.getElementById('Business').style.display="none";
+        document.getElementById('AfterSale').style.display="none";
+    }
+    function Business(){
+        document.getElementById('TeleCall').style.display="none";
+        document.getElementById('Sale').style.display="none";
+        document.getElementById('Business').style.display="initial";
+        document.getElementById('AfterSale').style.display="none";
+    }
+    function AfterSales(){
+        document.getElementById('TeleCall').style.display="none";
+        document.getElementById('Sale').style.display="none";
+        document.getElementById('Business').style.display="none";
+        document.getElementById('AfterSale').style.display="initial";
+    }   
+    
+</script>
+
+</html>
